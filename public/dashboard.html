@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arduinofest queue Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <h1>Arduinofest queue Dashboard</h1>
+  <ul id="queue">
+    <!-- queue will be displayed here -->
+  </ul>
+  <form method="POST" action="/remove">
+    <input type="text" name="name" placeholder="Enter name to remove" />
+    <button type="submit">Remove</button>
+  </form>
+  <a href="/logout">Log out</a>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/queue.js"></script>
+</body>
+</html>

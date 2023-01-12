@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arduinofest queue system</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <h1>Arduinofest queue system</h1>
+  <form method="POST" action="/add">
+    <input type="text" name="name" placeholder="Enter your name" />
+    <button type="submit">Add to queue</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/queue.js"></script>
+</body>
+</html>
